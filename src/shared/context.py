@@ -2,7 +2,7 @@ from collections import OrderedDict
 from tabulate import tabulate
 
 
-class JobContext(object):
+class JobContext():
     def __init__(self, sc):
         self.counters = OrderedDict()
         self._init_accumulators(sc)
