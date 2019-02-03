@@ -1,5 +1,6 @@
 from collections import OrderedDict
-from tabulate import tabulate
+
+# from tabulate import tabulate
 
 
 class JobContext():
@@ -25,5 +26,6 @@ class JobContext():
         self.counters[name] += value
 
     def print_accumulators(self):
-        print(tabulate(
-            self.counters.items(), self.counters.keys(), tablefmt="simple"))
+        print(self.counters)
+        # print(tabulate(
+        #     self.counters.items(), self.counters.keys(), tablefmt="simple"))
