@@ -25,6 +25,5 @@ class JobContext():
         self.counters[name] += value
 
     def print_accumulators(self):
-        # print (self.counters)
         print(tabulate(
             self.counters.items(), self.counters.keys(), tablefmt="simple"))
